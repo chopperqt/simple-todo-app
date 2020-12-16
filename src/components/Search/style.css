@@ -1,0 +1,26 @@
+.container__items {
+    display: flex;
+    align-items: center;
+    min-width: 500px;
+    max-width: 500px;
+    display: grid;
+}
+.container button {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.container button:first-child {
+    margin-left: 0;
+}
+li {
+    min-width: 100%;
+    max-width: 100%;
+    list-style: none;
+}
+body {
+    display: grid;
+    justify-items: center;
+}
+.MuiFormControl-root {
+    width: 100%;
+}
