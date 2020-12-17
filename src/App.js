@@ -17,6 +17,8 @@ class App  extends Component {
       isSearched: [],
       searching: false,
       error: ' ',
+      task_done_t: 0,
+      task_done_f: 0
     }
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleAddClick = this.handleAddClick.bind(this);
@@ -162,7 +164,7 @@ class App  extends Component {
 
     return ( 
       <div className="App">
-        <h1>Todos-App</h1>
+        <h1>Todo-App</h1>
         <Search 
           handleInputChange={this.handleInputChange} 
           addInputValue={addInputValue}
@@ -205,6 +207,9 @@ class App  extends Component {
             ) : <h3>Вы всё сделали ?</h3>
            }
           
+        </div>
+        <div className="container">
+          <p>Выполнено: {result.filter(item => item.task_done === true).length} | Не выполнено: {result.filter(item => item.task_done === false).length}</p>
         </div>
       </div>
      );
