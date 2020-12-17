@@ -12,4 +12,4 @@
 - сохранение задач в localStorage
 - счётчик кол-ва выполненных и невыполненных задач
 
- Посмотреть на приложение вы можите по <a href="https://chopperqt.github.io/simple-todo-app/">ссылке</a>
+ Посмотреть на приложение вы можите по <a target="_blank" href="https://chopperqt.github.io/simple-todo-app/">ссылке</a>
